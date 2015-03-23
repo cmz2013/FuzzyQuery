@@ -1,0 +1,10 @@
+package cn.common.sort;
+
+public class Studeng extends CommonComparator {
+
+	public Studeng(String compareField) {
+		super(compareField);
+		// TODO Auto-generated constructor stub
+	}
+
+}

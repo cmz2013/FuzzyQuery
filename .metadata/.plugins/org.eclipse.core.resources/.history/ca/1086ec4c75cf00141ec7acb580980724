@@ -1,0 +1,31 @@
+package cn.common.sort;
+
+import java.lang.reflect.Field;
+import java.text.Collator;
+import java.util.Comparator;
+import java.util.Locale;
+
+/**
+ * POJO对象比较算法实现
+ * 
+ * @author Chongming
+ *
+ */
+public abstract class CommonComparator implements Comparable<CommonComparator> {
+	
+	private String compareField ;
+	
+	public CommonComparator(String compareField) {
+		this.compareField = compareField;
+	}
+	
+	public String getCompareField() {
+		return compareField;
+	}
+
+	public void setCompareField(String compareField) {
+		this.compareField = compareField;
+	}
+
+	
+}

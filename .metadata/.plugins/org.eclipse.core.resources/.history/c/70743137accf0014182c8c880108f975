@@ -1,0 +1,11 @@
+package cn.common.sort.test;
+
+import cn.common.sort.CommonComparator;
+
+public class Student extends CommonComparator {
+
+	public Student(String compareField) {
+		super(compareField);
+	}
+
+}

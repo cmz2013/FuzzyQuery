@@ -1,0 +1,41 @@
+package cn.common.sort.test;
+
+import cn.common.sort.CommonComparator;
+
+public class Student extends CommonComparator {
+	
+	private static final String compareField = "age";
+	
+	private String name;
+	
+	private int age;
+	
+	private Student(String compareField) {
+		super(compareField);
+	}
+	
+	public Student() {
+		super(compareField);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

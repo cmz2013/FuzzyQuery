@@ -1,0 +1,10 @@
+package cn.common.sort.test;
+
+public class TestClass {
+	
+	public static void main(String[] args) {
+		Student stu1 = new Student();
+		stu1.setAge(20);
+		stu1.setName("stu1");
+	}
+}

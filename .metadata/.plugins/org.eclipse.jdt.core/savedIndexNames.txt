@@ -1,0 +1,18 @@
+INDEX VERSION 1.126+D:\Work\opensource\FuzzyQuery\.metadata\.plugins\org.eclipse.jdt.core
+2806335881.index
+758615375.index
+1643571442.index
+2190799553.index
+632990667.index
+4050114825.index
+694192928.index
+601256590.index
+240462872.index
+2025013232.index
+3187654423.index
+2715527343.index
+3305863269.index
+1577736437.index
+1297408420.index
+339296643.index
+2888063443.index

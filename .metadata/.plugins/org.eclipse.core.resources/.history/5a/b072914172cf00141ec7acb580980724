@@ -1,0 +1,24 @@
+/**   
+ * Copyright: 鐗堟潈鎵�湁 ( c ) 鍖椾含鍚槑鏄熻景淇℃伅鎶�湳鑲′唤鏈夐檺鍏徃 2012銆備繚鐣欐墍鏈夋潈鍒┿�
+ * @author chongming
+ * @date 2012-7-25 涓嬪崍06:8:00
+ */
+package cn.common.fuzzy.anno;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.LOCAL_VARIABLE})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface Data {
+	/**
+	 * 鐢ㄦ埛鏁版嵁涓庤〃鏁版嵁鎴栧唴瀛樻暟鎹殑鏄犲皠鍏崇郴
+	 * @return
+	 */
+	String userData();
+	String dbData();
+}

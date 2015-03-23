@@ -1,0 +1,26 @@
+package cn.common.sort.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.common.sort.SortUtils;
+
+public class TestClass {
+	
+	public static void main(String[] args) {
+		List datas = new ArrayList<>();
+		Student stu1 = new Student();
+		stu1.setAge(20);
+		stu1.setName("stu1");
+		
+		Student stu2 = new Student();
+		stu1.setAge(19);
+		stu1.setName("stu2");
+		
+		Student stu3 = new Student();
+		stu1.setAge(21);
+		stu1.setName("stu3");
+		
+		SortUtils.sort(datas, SortUtils.SORD_ASC);
+	}
+}

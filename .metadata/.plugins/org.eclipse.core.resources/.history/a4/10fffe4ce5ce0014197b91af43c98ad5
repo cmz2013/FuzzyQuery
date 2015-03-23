@@ -1,0 +1,27 @@
+package cn.common.sort;
+
+import java.util.Collections;
+import java.util.List;
+
+
+
+public class SortUtils {
+	/**
+	 * 数据排序
+	 * @param dataCache
+	 * @param field
+	 * @param order
+	 */
+	public synchronized static void sort(
+			List<? extends CommonComparator> dataCache, String field, String order) {
+		if (StringUtils.isBlank(field) || dataCache.size() == 0) {
+			return;
+		} else {
+			CommonComparator.setCompareField(field);
+			Collections.sort(dataCache);
+			if (!"desc".equalsIgnoreCase(order)) {
+				Collections.reverse(dataCache);
+			}
+		}
+	}
+}
