@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="29" version="2.0">
 <workbenchAdvisor/>
-<window height="728" width="1024" x="259" y="14">
+<window height="728" maximized="true" width="1024" x="259" y="14">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -26,7 +26,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -35,21 +35,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PagerUtils.java" partName="PagerUtils.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/page/PagerUtils.java" title="PagerUtils.java" tooltip="common/src/cn/common/page/PagerUtils.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/page/PagerUtils.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="455" selectionTopPixel="514"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyQuery.java" partName="FuzzyQuery.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/FuzzyQuery.java" title="FuzzyQuery.java" tooltip="common/src/cn/common/fuzzy/FuzzyQuery.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4895" selectionTopPixel="2816"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -127,7 +116,7 @@
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -391,183 +380,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/CommonComparator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/Student.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/TestClass.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/SortUtils.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/page/PagerUtils.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/page/Pager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/CommonComparator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/DataDict.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/TestClass.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/SortUtils.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/page/PagerUtils.java"/>
-</editors>
-<item historyLabel="Pager.java" index="5">
-<position info="not_deleted" x="1251" y="0"/>
-</item>
-<item historyLabel="Pager.java" index="5">
-<position info="not_deleted" x="465" y="4"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="552" y="0"/>
-</item>
-<item historyLabel="SortUtils.java" index="3">
-<position info="not_deleted" x="146" y="0"/>
-</item>
-<item historyLabel="PagerUtils.java" index="4">
-<position info="not_deleted" x="605" y="0"/>
-</item>
-<item historyLabel="Pager.java" index="5">
-<position info="not_deleted" x="473" y="3"/>
-</item>
-<item historyLabel="SortUtils.java" index="3">
-<position info="not_deleted" x="146" y="0"/>
-</item>
-<item historyLabel="SortUtils.java" index="3">
-<position info="not_deleted" x="172" y="0"/>
-</item>
-<item historyLabel="Pager.java" index="5">
-<position info="not_deleted" x="613" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="552" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="237" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="210" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="193" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="166" y="4"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="193" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="270" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="223" y="9"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="333" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="210" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="617" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="441" y="0"/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position/>
-</item>
-<item historyLabel="CommonComparator.java" index="0">
-<position info="not_deleted" x="319" y="0"/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position/>
-</item>
-<item historyLabel="CommonComparator.java" index="0">
-<position info="not_deleted" x="313" y="6"/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position info="not_deleted" x="249" y="0"/>
-</item>
-<item historyLabel="CommonComparator.java" index="0">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="441" y="0"/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position info="not_deleted" x="492" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="441" y="0"/>
-</item>
-<item historyLabel="CommonComparator.java" index="0">
-<position info="not_deleted" x="269" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="519" y="0"/>
-</item>
-<item historyLabel="CommonComparator.java" index="0">
-<position info="not_deleted" x="521" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="519" y="0"/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position info="not_deleted" x="411" y="0"/>
-</item>
-<item historyLabel="CommonComparator.java" index="6">
-<position/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position info="not_deleted" x="114" y="0"/>
-</item>
-<item historyLabel="CommonComparator.java" index="6">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Student.java" index="1">
-<position info="not_deleted" x="174" y="0"/>
-</item>
-<item historyLabel="DataDict.java" index="7">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="8">
-<position info="not_deleted" x="596" y="0"/>
-</item>
-<item historyLabel="DataDict.java" index="7">
-<position info="not_deleted" x="51" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="9">
-<position info="not_deleted" x="14595" y="9"/>
-</item>
-<item historyLabel="SortUtils.java" index="10">
-<position info="not_deleted" x="229" y="0"/>
-</item>
-<item historyLabel="PagerUtils.java" index="11">
-<position info="not_deleted" x="455" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="FuzzyQuery.java" index="9">
-<position info="not_deleted" x="3415" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="9">
-<position info="not_deleted" x="8131" y="6"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -576,11 +394,25 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@42074eb"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java">
+<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dao.java" tooltip="common/src/cn/common/fuzzy/dao/Dao.java">
+<persistable path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Data.java" tooltip="common/src/cn/common/fuzzy/anno/Data.java">
+<persistable path="/common/src/cn/common/fuzzy/anno/Data.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Map.java" tooltip="common/src/cn/common/fuzzy/anno/Map.java">
+<persistable path="/common/src/cn/common/fuzzy/anno/Map.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyField.java" tooltip="common/src/cn/common/fuzzy/anno/FuzzyField.java">
+<persistable path="/common/src/cn/common/fuzzy/anno/FuzzyField.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyQuery.java" tooltip="common/src/cn/common/fuzzy/FuzzyQuery.java">
 <persistable path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
 </file>
@@ -604,21 +436,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pager.java" tooltip="common/src/cn/common/page/Pager.java">
 <persistable path="/common/src/cn/common/page/Pager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dao.java" tooltip="common/src/cn/common/fuzzy/dao/Dao.java">
-<persistable path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Data.java" tooltip="common/src/cn/common/fuzzy/anno/Data.java">
-<persistable path="/common/src/cn/common/fuzzy/anno/Data.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java">
-<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Map.java" tooltip="common/src/cn/common/fuzzy/anno/Map.java">
-<persistable path="/common/src/cn/common/fuzzy/anno/Map.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyField.java" tooltip="common/src/cn/common/fuzzy/anno/FuzzyField.java">
-<persistable path="/common/src/cn/common/fuzzy/anno/FuzzyField.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java">
 <persistable path="/common/src/cn/common/fuzzy/DataDict.java"/>
