@@ -5,8 +5,8 @@ import java.util.List;
 public abstract class Dao {
 	/**
 	 * 统计条数
-	 * @param clazz
-	 * @param condition
+	 * @param clazz: ORM
+	 * @param condition: 查询条件
 	 * @return
 	 */
 	public abstract int count(Class<?> clazz, String condition);
@@ -21,7 +21,7 @@ public abstract class Dao {
 	/**
 	 * 查询数据
 	 * @param clazz: ORM
-	 * @param condition: 条件
+	 * @param condition: 查询条件
 	 * @param pager
 	 * @param pageSize
 	 * @return
@@ -47,7 +47,7 @@ public abstract class Dao {
 	/**
 	 * 查询数据
 	 * @param clazz: ORM
-	 * @param condition
+	 * @param condition: 查询条件
 	 * @return
 	 */
 	public abstract List<?> query(Class<?> clazz, String condition);

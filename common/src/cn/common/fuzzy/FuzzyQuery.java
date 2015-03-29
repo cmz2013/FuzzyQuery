@@ -31,38 +31,44 @@ public class FuzzyQuery {
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 *  
+	 *  @param clazz: ORM
 	 *  @param conditions: 查询条件
 	 *  @param pattern: 模糊查询内容
-	 *  @param dataDict/conditions: 为空时，相当于执行 Pager query(Dao dao, Class clazz, String pattern, Pager pager)
-	 *  @return：总的记录数，一页的数据，并支持排序
+	 *  @param dataDict：用户数据与DB数据的映射关系
+	 *  @return：总的记录数，一页的数据，支持排序
 	 */
 	@SuppressWarnings("rawtypes")
-	public Pager query(Dao dao, Class clazz, String conditions, String pattern, Pager pager, DataDict dataDict) {
+	public Pager query(Dao dao, Class clazz, String conditions, 
+			String pattern, Pager pager, DataDict dataDict) {
+		
 		Map<String, List<String>> fuzzyFields = getTableFuzzyFields(clazz, pattern);
 		initPatts(fuzzyFields, pattern, dataDict);
+		
 		return executeDao(dao, clazz, conditions, fuzzyFields, pattern, pager);
 	}
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 * 
+	 * @param clazz: ORM
 	 * @param conditions: 查询条件
 	 * @param pattern: 模糊查询内容
-	 * @param dataDict/conditions：为空时，相当于执行List query(Dao dao, Class clazz, String pattern)
+	 * @param dataDict：用户数据与DB数据的映射关系
 	 */
 	@SuppressWarnings("rawtypes")
-	public List query(Dao dao, Class clazz, String conditions, String pattern, DataDict dataDict) {
+	public List query(Dao dao, Class clazz, String conditions, 
+			String pattern, DataDict dataDict) {
+		
 		Map<String, List<String>> fuzzyFields = getTableFuzzyFields(clazz, pattern);
 		initPatts(fuzzyFields, pattern, dataDict);
+		
 		return executeDao(dao, clazz, conditions, fuzzyFields, pattern);
 	}
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 * 
+	 * @param clazz: ORM
 	 * @param pattern: 模糊查询内容
-	 * @return：总的记录数，一页的数据，并支持排序
+	 * @return：总的记录数，一页的数据，支持排序
 	 */
 	@SuppressWarnings("rawtypes")
 	public Pager query(Dao dao, Class clazz, String pattern, Pager pager) {
@@ -72,7 +78,7 @@ public class FuzzyQuery {
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 * 
+	 * @param clazz: ORM
 	 * @param pattern: 模糊查询内容
 	 */
 	@SuppressWarnings("rawtypes")
@@ -83,37 +89,43 @@ public class FuzzyQuery {
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 * 
+	 * @param clazz: ORM
 	 * @param conditions: 查询条件
 	 * @param pattern: 模糊查询内容
-	 * @param dataDict/conditions：为空时，相当于执行List query(Dao dao, Class clazz, List<String> fields, String pattern) 
 	 * @param fields: 动态设置模糊查询字段
+	 * @param dataDict：用户数据与DB数据的映射关系
 	 */
 	@SuppressWarnings("rawtypes")
-	public List query(Dao dao, Class clazz, String conditions, List<String> fields, String pattern, DataDict dataDict) {
+	public List query(Dao dao, Class clazz, String conditions, List<String> 
+			fields, String pattern, DataDict dataDict) {
+		
 		Map<String, List<String>> fuzzyFields = getFuzzyFields(fields, pattern);
 		initPatts(fuzzyFields, pattern, dataDict);
+		
 		return executeDao(dao, clazz, conditions, fuzzyFields, pattern);
 	}
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 * 
+	 * @param clazz: ORM
 	 * @param conditions: 查询条件
 	 * @param pattern: 模糊查询内容
-	 * @param dataDict：为空时，相当于执行List query(Dao dao, Class clazz, List<String> fields, String pattern) 
 	 * @param fields: 动态设置模糊查询字段
+	 * @param dataDict：用户数据与DB数据的映射关系
 	 */
 	@SuppressWarnings("rawtypes")
-	public List query(Dao dao, Class clazz, List<String> fields, String pattern, DataDict dataDict) {
+	public List query(Dao dao, Class clazz, List<String> fields, 
+			String pattern, DataDict dataDict) {
+		
 		Map<String, List<String>> fuzzyFields = getFuzzyFields(fields, pattern);
 		initPatts(fuzzyFields, pattern, dataDict);
+		
 		return executeDao(dao, clazz, null, fuzzyFields, pattern);
 	}
 	
 	/**
 	 * 基于数据库表的模糊查询
-	 * 
+	 * @param clazz: ORM
 	 * @param conditions: 查询条件
 	 * @param pattern: 模糊查询内容
 	 * @param fields: 动态设置模糊查询字段
@@ -127,7 +139,7 @@ public class FuzzyQuery {
 	/**
 	 * 查询数据库
 	 * 
-	 * @param clazz
+	 * @param clazz: ORM
 	 * @param conditions: 查询条件
 	 * @param fuzzyFields
 	 * @param pattern: 模糊查询内容
@@ -197,7 +209,7 @@ public class FuzzyQuery {
 	/**
 	 * 查询数据库
 	 * 
-	 * @param clazz
+	 * @param clazz: ORM
 	 * @param conditions: 查询条件
 	 * @param fuzzyFields
 	 * @param pattern: 模糊查询内容
@@ -279,6 +291,7 @@ public class FuzzyQuery {
 			List<String> patts = new ArrayList<String>();
 			fuzzyFields.put(field, patts);
 		}
+		
 		return fuzzyFields;
 	}
 
@@ -301,6 +314,7 @@ public class FuzzyQuery {
 	 * 设置模糊字段匹配值
 	 * 
 	 * @param pattern: 模糊查询内容
+	 * @param dataDict: 用户数据与DB数据或内存数据的映射关系
 	 */
 	private void initPatts(Map<String, List<String>> fuzzyFields,
 			String pattern, DataDict dataDict) {
@@ -310,12 +324,12 @@ public class FuzzyQuery {
 		
 		if (null != dataDict) {
 			Map<String, Map<String, String>> mappMap = dataDict.getDataDict();
-			for (String tbField : mappMap.keySet()) {
-				if (null != fuzzyFields.get(tbField)) {
-					Map<String, String> mapp = mappMap.get(tbField);
+			for (String field : mappMap.keySet()) {
+				if (null != fuzzyFields.get(field)) {
+					Map<String, String> mapp = mappMap.get(field);
 					for (String webData : mapp.keySet()) {
 						if (webData.contains(pattern)) {
-							List<String> list = fuzzyFields.get(tbField);
+							List<String> list = fuzzyFields.get(field);
 							if (null != list) {
 								list.add(mapp.get(webData));
 							}
@@ -354,11 +368,16 @@ public class FuzzyQuery {
 	 * @param fuzzyFields
 	 * @param pattern: 模糊查询内容
 	 * @return
-	 * @throws Exception 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
 	 */
 	@SuppressWarnings("rawtypes")
 	private List filterData(Collection dataCache, Map<String, 
-			List<String>> fuzzyFields, String pattern) throws Exception {
+			List<String>> fuzzyFields, String pattern) throws 
+			NoSuchFieldException, SecurityException, 
+			IllegalArgumentException, IllegalAccessException {
 		
 		List<Object> resList = new LinkedList<>();
 		pattern = pattern.toUpperCase();
@@ -400,15 +419,20 @@ public class FuzzyQuery {
 	
 	/**
 	 * 基于内存数据的模糊查询
-	 * 
 	 * @param fields：动态指定模糊查询属性
 	 * @param pattern: 模糊查询内容
-	 * @param dataDict：如果为空，相当于执行List query(Collection dataCache, List<String> fields, String pattern)
-	 * @throws Exception 
+	 * @param dataDict：用户数据与内存数据的映射关系
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
 	 * 
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public List query(Collection dataCache, List<String> fields, String pattern,  DataDict dataDict) throws Exception {
+	public List query(Collection dataCache, List<String> fields, 
+			String pattern,  DataDict dataDict) throws 
+			NoSuchFieldException, SecurityException, 
+			IllegalArgumentException, IllegalAccessException {
 		
 		if (null == dataCache || dataCache.size() == 0) {
 			return new LinkedList<>();
@@ -418,40 +442,47 @@ public class FuzzyQuery {
 		
 		Map<String, List<String>> fuzzyFields = getFuzzyFields(fields, pattern);
 		initPatts(fuzzyFields, pattern, dataDict);
+		
 		return filterData(dataCache, fuzzyFields, pattern);
 	}
 	
 	/**
 	 * 基于内存数据的模糊查询
-	 * 
 	 * @param pattern: 模糊查询内容
 	 * @param fields：动态指定模糊查询属性
-	 * @throws Exception 
-	 * 
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public List query(Collection dataCache, List<String> fields, String pattern) throws Exception {
+	public List query(Collection dataCache, List<String> fields, String pattern) 
+			throws NoSuchFieldException, SecurityException, 
+			IllegalArgumentException, IllegalAccessException {
 		
 		if (null == dataCache || dataCache.size() == 0) {
 			return new LinkedList<>();
 		} else if (StringUtils.isEmpty(pattern)) {
 			return new LinkedList<>(dataCache);
 		}
-		
 		Map<String, List<String>> fuzzyFields = getFuzzyFields(fields, pattern);
+		
 		return filterData(dataCache, fuzzyFields, pattern);
 	}
 
 	/**
 	 * 基于内存数据的模糊查询
-	 * 
 	 * @param pattern: 模糊查询内容
-	 * @param dataDict：如果为空，相当于执行List query(Collection dataCache, String pattern)
-	 * @throws Exception 
-	 * 
+	 * @param dataDict：用户数据与内存数据的映射关系
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public List query(Collection dataCache, String pattern,  DataDict dataDict) throws Exception {
+	public List query(Collection dataCache, String pattern, DataDict dataDict) 
+			throws NoSuchFieldException, SecurityException, 
+			IllegalArgumentException, IllegalAccessException {
 		
 		if (null == dataCache || dataCache.size() == 0) {
 			return new LinkedList<>();
@@ -462,19 +493,22 @@ public class FuzzyQuery {
 		Class clazz = dataCache.iterator().next().getClass();
 		Map<String, List<String>> fuzzyFields = getObjectFuzzyFields(clazz, pattern);
 		initPatts(fuzzyFields, pattern, dataDict);
+		
 		return filterData(dataCache, fuzzyFields, pattern);
 	}
 	
 	/**
 	 * 基于内存数据的模糊查询
-	 * 
 	 * @param pattern: 模糊查询内容
-	 * @throws Exception 
-	 * 
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public List query(Collection dataCache, 
-			String pattern) throws Exception {
+	public List query(Collection dataCache, String pattern) throws 
+			NoSuchFieldException, SecurityException, 
+			IllegalArgumentException, IllegalAccessException {
 		
 		if (null == dataCache || dataCache.size() == 0) {
 			return new LinkedList<>();
@@ -484,41 +518,49 @@ public class FuzzyQuery {
 		
 		Class clazz = dataCache.iterator().next().getClass();
 		Map<String, List<String>> fuzzyFields = getObjectFuzzyFields(clazz, pattern);
+		
 		return filterData(dataCache, fuzzyFields, pattern);
 	}
 	
 
 	/**
 	 * 基于内存数据的模糊查询
-	 * 
 	 * @param pattern: 模糊查询内容
-	 * @param dataDict：如果为空，相当于执行Pager query(List dataCache, String pattern, Pager pager)
-	 * @return：总的记录数，一页的数据，并支持排序
-	 * @throws Exception 
+	 * @param dataDict：用户数据与内存数据的映射关系
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
+	 * @return：总的记录数，一页的数据，支持排序
 	 * 
 	 */
 	@SuppressWarnings({ "unchecked" })
 	public Pager query(List<? extends CommonComparator> dataCache, 
-			String pattern, Pager pager, DataDict dataDict) throws Exception {
+			String pattern, Pager pager, DataDict dataDict) throws 
+			NoSuchFieldException, SecurityException, 
+			IllegalArgumentException, IllegalAccessException {
 		
 		if (null != pager.getSidx() && null != pager.getSord()) {
 			SortUtils.sort(dataCache, pager.getSord());
 		}
-		
 		return PagerUtils.paging(query(dataCache, pattern, dataDict), pager);
 	}
 	
 	/**
 	 * 基于内存数据的模糊查询
-	 * 
 	 * @param pattern: 模糊查询内容
-	 * @return：总的记录数，一页的数据，并支持排序
-	 * @throws Exception 
-	 * 
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
+	 * @return：总的记录数，一页的数据，支持排序
 	 */
 	@SuppressWarnings({ "unchecked" })
-	public Pager query(List<? extends CommonComparator> dataCache, 
-			String pattern, Pager pager) throws Exception {
+	public Pager query(List<? extends CommonComparator> dataCache, String 
+			pattern, Pager pager) throws NoSuchFieldException, 
+			SecurityException, IllegalArgumentException, IllegalAccessException {
+		
 		return PagerUtils.paging(query(dataCache, pattern), pager);
 	}
+	
 }
