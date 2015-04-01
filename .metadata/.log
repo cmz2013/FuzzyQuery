@@ -217,3 +217,13 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-03-28 12:16:41.150
 !MESSAGE properties loading 'common'
+!SESSION 2015-03-31 17:13:44.051 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-03-31 17:14:05.489
+!MESSAGE properties loading 'common'
