@@ -1,0 +1,5 @@
+package cn.common.fuzzy.dao;
+
+public class NutzDao2 implements Dao<T> {
+
+}

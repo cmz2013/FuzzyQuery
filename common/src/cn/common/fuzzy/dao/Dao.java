@@ -2,7 +2,7 @@ package cn.common.fuzzy.dao;
 
 import java.util.List;
 
-public abstract class Dao {
+public interface Dao {
 	/**
 	 * 统计条数
 	 * @param clazz: ORM

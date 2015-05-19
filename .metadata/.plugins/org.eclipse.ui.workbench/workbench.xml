@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="37" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="259" y="14">
 <fastViewData fastViewLocation="1024"/>
@@ -37,23 +37,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyQuery.java" partName="FuzzyQuery.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/FuzzyQuery.java" title="FuzzyQuery.java" tooltip="common/src/cn/common/fuzzy/FuzzyQuery.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11549" selectionTopPixel="8566"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" partName="DataDict.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/DataDict.java" title="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" partName="DataDict.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/DataDict.java" title="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/fuzzy/DataDict.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="80" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" partName="NutzDao.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/dao/NutzDao.java" title="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="368" selectionTopPixel="264"/>
 </editor>
 </editors>
 <views>
@@ -132,7 +122,7 @@
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -402,136 +392,12 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/NutzDao2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/DataDict.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/DataDict.java"/>
 </editors>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15211" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15998" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="16221" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="14440" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15516" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15664" y="35"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="16184" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="16218" y="25"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="16189" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="11916" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15998" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2612" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2559" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="11916" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="890" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="1399" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="1854" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2195" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2612" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="3149" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="3625" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="3463" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="890" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="1854" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="890" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="687" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="1399" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="1232" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="1854" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2195" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2612" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2414" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="3149" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="2951" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="3625" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="11916" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="11605" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="12779" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="12510" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="13572" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="13297" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="14440" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="14201" y="0"/>
-</item>
 <item historyLabel="FuzzyQuery.java" index="0">
 <position info="not_deleted" x="14440" y="5"/>
 </item>
@@ -550,8 +416,137 @@
 <item historyLabel="FuzzyQuery.java" index="2">
 <position info="not_deleted" x="15945" y="0"/>
 </item>
-<item active="true" historyLabel="NutzDao.java" index="3">
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="Dao.java" index="4">
+<position/>
+</item>
+<item historyLabel="Dao.java" index="4">
+<position/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
+<position info="not_deleted" x="876" y="0"/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
+<position info="not_deleted" x="71" y="8"/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
+<position info="not_deleted" x="71" y="8"/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="NutzDao2.java" index="5">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="11549" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="4864" y="28"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="5066" y="5"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="4874" y="5"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="5156" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="4083" y="0"/>
+</item>
+<item historyLabel="Dao.java" index="4">
+<position/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="4083" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="3981" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="1872" y="0"/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="1872" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="6219" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="6874" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="6974" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="7017" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="6875" y="0"/>
+</item>
+<item historyLabel="FuzzyQuery.java" index="6">
+<position info="not_deleted" x="6874" y="0"/>
+</item>
+<item historyLabel="DataDict.java" index="7">
+<position info="not_deleted" x="263" y="0"/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position info="not_deleted" x="217" y="0"/>
+</item>
+<item historyLabel="Dao.java" index="4">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="NutzDao.java" index="3">
+<position info="not_deleted" x="607" y="0"/>
+</item>
+<item historyLabel="Dao.java" index="4">
+<position info="not_deleted" x="653" y="0"/>
+</item>
+<item historyLabel="DataDict.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DataDict.java" index="8">
+<position info="not_deleted" x="263" y="0"/>
+</item>
+<item historyLabel="DataDict.java" index="8">
+<position info="not_deleted" x="229" y="6"/>
+</item>
+<item active="true" historyLabel="DataDict.java" index="8">
+<position info="not_deleted" x="237" y="6"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -571,14 +566,17 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java">
-<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java">
 <persistable path="/common/src/cn/common/fuzzy/DataDict.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dao.java" tooltip="common/src/cn/common/fuzzy/dao/Dao.java">
 <persistable path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java">
+<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao2.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao2.java">
+<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao2.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyQuery.java" tooltip="common/src/cn/common/fuzzy/FuzzyQuery.java">
 <persistable path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
@@ -612,9 +610,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pager.java" tooltip="common/src/cn/common/page/Pager.java">
 <persistable path="/common/src/cn/common/page/Pager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pager.java" tooltip="common/src/cn/common/pager/Pager.java">
-<persistable path="/common/src/cn/common/pager/Pager.java"/>
 </file>
 </mruList>
 </workbench>
