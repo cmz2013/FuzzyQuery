@@ -1,0 +1,58 @@
+package cn.common.sort;
+
+import java.lang.reflect.Field;
+import java.text.Collator;
+import java.util.Locale;
+
+/**
+ * 用于POJO对象比较
+ * 
+ * @author Chongming
+ *
+ */
+public class Comparator implements Comparable<Object> {
+	
+	protected String[] compareFields;
+	
+	/**
+	 * 获取比较字段
+	 * @return
+	 * @throws SecurityException 
+	 * @throws NoSuchFieldException 
+	 */
+	private Field[] getCompareFields() throws NoSuchFieldException, SecurityException {
+		if (null == compareFields || compareFields.length == 0) {
+			return getClass().getDeclaredFields();
+		} else {
+			Field[] fds = new Field[compareFields.length];
+			for (int i = 0; i < compareFields.length; i++) {
+				fds[i] = getClass().getDeclaredField(compareFields[i]);
+			}
+			return fds;
+		}
+	}
+
+	/**
+	 * 比较算法,必须初始化compareField
+	 */
+	@Override
+	public int compareTo(Object o) {
+		try {
+			Field[] fds = getCompareFields();
+			for (Field fd : fds) {
+				int res = compareTo(o, fd);
+				if (0 != res) {
+					return res;
+				}
+			}
+			return 0;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private int compareTo(Object o, Field fd) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

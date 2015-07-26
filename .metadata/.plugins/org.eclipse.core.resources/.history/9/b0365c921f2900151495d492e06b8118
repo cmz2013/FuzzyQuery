@@ -1,0 +1,75 @@
+package cn.common.sort;
+
+import java.util.Collections;
+import java.util.List;
+
+public class SortUtils {
+	
+	/**
+	 * POJO数据排序
+	 * @param dataCache
+	 * @param order
+	 * @throws SortException 
+	 */
+	public static void sort(List<? extends CommonComparator> 
+			dataCache, Order order) throws SortException {
+		
+		if (dataCache.size() > 0) {
+			if (null == dataCache.get(0).getCompareField() ||
+					"".equals(dataCache.get(0).getCompareField())) {
+				throw new SortException(
+						"\"" +
+						dataCache.get(0).getClass().getName() +
+						".compareField\" is null");
+			}
+			
+			try {
+				dataCache.get(0).getClass().getDeclaredField(
+						dataCache.get(0).getCompareField());
+			} catch (NoSuchFieldException e) {
+				throw new SortException(
+						"No such field: \"" +
+						dataCache.get(0).getClass().getName() +
+						"." + dataCache.get(0).getCompareField() + "\"");
+			} catch (SecurityException e) {
+				throw e;
+			}
+			
+			Collections.sort(dataCache);
+			if (!Order.desc.equals(order)) {
+				Collections.reverse(dataCache);
+			}
+		}
+	}
+	
+	/**
+	 * POJO数据排序
+	 * @param datas
+	 * @throws SortException 
+	 */
+	public static void sort(List<? extends CommonComparator> datas) 
+			throws SortException {
+		
+		if (datas.size() > 0) {
+			for (CommonComparator data : datas) {
+				if (null == data.getCompareField() ||
+						"".equals(data.getCompareField())) {
+					throw new SortException(data.toString() + 
+							" NullCompareFieldException: \"compareField\"");
+				}
+				
+				try {
+					data.getClass().getDeclaredField(
+							data.getCompareField());
+				} catch (NoSuchFieldException e) {
+					throw new SortException(data.toString() +
+							" NoSuchFieldException: \"" +
+							data.getCompareField() + "\"");
+				} catch (SecurityException e) {
+					throw e;
+				}
+			}
+			Collections.sort(datas);
+		}
+	}
+}

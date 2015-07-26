@@ -1,0 +1,64 @@
+package cn.common.sort;
+
+import java.util.Collections;
+import java.util.List;
+
+public class SortUtils {
+	
+	/**
+	 * POJO数据排序
+	 * @param datas
+	 * @param order
+	 * @throws SortException 
+	 */
+	public static void sort(List<? extends CommonComparator> 
+			dataCache, Order order) throws SortException {
+		
+		if (dataCache.size() > 0) {
+			for (CommonComparator data : datas) {
+				try {
+					data.getClass().getDeclaredField(
+							data.getCompareField());
+				} catch (NoSuchFieldException e) {
+					throw new SortException(
+							data.toString() +
+							" compareField=" +
+							data.getCompareField());
+				} catch (SecurityException e) {
+					throw e;
+				}
+			}
+			
+			Collections.sort(datas);
+			if (!Order.desc.equals(order)) {
+				Collections.reverse(datas);
+			}
+		}
+	}
+	
+	/**
+	 * POJO数据排序
+	 * @param datas
+	 * @throws SortException 
+	 */
+	public static void sort(List<? extends CommonComparator> datas) 
+			throws SortException {
+		
+		if (datas.size() > 0) {
+			for (CommonComparator data : datas) {
+				try {
+					data.getClass().getDeclaredField(
+							data.getCompareField());
+				} catch (NoSuchFieldException e) {
+					throw new SortException(
+							data.toString() +
+							" compareField=" +
+							data.getCompareField());
+				} catch (SecurityException e) {
+					throw e;
+				}
+			}
+			Collections.sort(datas);
+		}
+	}
+}

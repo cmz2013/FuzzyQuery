@@ -7,7 +7,7 @@ import cn.common.sort.SortUtils;
 
 public class TestClass {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSuchFieldException {
 		List<Student> datas = new ArrayList<>();
 		Student stu1 = new Student();
 		stu1.setAge(20);
@@ -16,12 +16,12 @@ public class TestClass {
 		
 		Student stu2 = new Student();
 		stu2.setAge(19);
-		stu2.setName("stu2");
+		stu2.setName("stu3");
 		datas.add(stu2);
 		
 		Student stu3 = new Student();
-		stu3.setAge(21);
-		stu3.setName("stu3");
+		stu3.setAge(19);
+		stu3.setName("stu2");
 		datas.add(stu3);
 		
 		Student stu4 = new Student();
@@ -34,9 +34,10 @@ public class TestClass {
 		stu5.setName("stu5");
 		datas.add(stu5);
 		
-		SortUtils.sort(datas, SortUtils.SORD_ASC);
+		SortUtils.sort(datas);
 		for (Student stu : datas) {
-			System.out.println(stu.getName() + " " + stu.getAge());
+			System.out.println(stu);
 		}
+		
 	}
 }

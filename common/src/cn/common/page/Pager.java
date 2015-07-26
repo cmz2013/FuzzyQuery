@@ -3,6 +3,8 @@ package cn.common.page;
 import java.io.Serializable;
 import java.util.List;
 
+import cn.common.sort.Order;
+
 /**
  * 分页类，传递分页信息
  *
@@ -29,7 +31,7 @@ public class Pager implements Serializable{
 	private String sidx;
 	
 	/**	排序方式 */
-	private String sord = "asc";
+	private String order = Order.desc.name();
 	
 	public Pager() {
 	}
@@ -79,11 +81,11 @@ public class Pager implements Serializable{
 		this.sidx = sidx;
 	}
 
-	public String getSord() {
-		return sord;
+	public String getOrder() {
+		return order;
 	}
 
-	public void setSord(String sord) {
-		this.sord = sord;
+	public void setOrder(String order) {
+		this.order = order;
 	}
 }

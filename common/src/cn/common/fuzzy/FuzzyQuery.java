@@ -16,7 +16,8 @@ import cn.common.fuzzy.anno.FuzzyField;
 import cn.common.fuzzy.dao.Dao;
 import cn.common.page.Pager;
 import cn.common.page.PagerUtils;
-import cn.common.sort.CommonComparator;
+import cn.common.sort.Comparator;
+import cn.common.sort.Order;
 import cn.common.sort.SortUtils;
 
 /**
@@ -172,8 +173,9 @@ public class FuzzyQuery {
 			}
 			
 			pager.setRecords(dao.count(clazz, conditions));
-			if (null != pager.getSidx() && null != pager.getSord()) {
-				conditions +=  " order by " + pager.getSidx() + " " + pager.getSord();
+			if (null != pager.getSidx() && null != pager.getOrder()) {
+				conditions +=  " order by " + pager.getSidx() + 
+						" " + pager.getOrder();
 			}
 			
 			datas = dao.query(clazz, conditions, 
@@ -186,11 +188,13 @@ public class FuzzyQuery {
 				pager.setRecords(dao.count(clazz));
 			}
 			
-			if (null != pager.getSidx() && null != pager.getSord()) {
+			if (null != pager.getSidx() && null != pager.getOrder()) {
 				if (StringUtils.isNotBlank(conditions)) {
-					conditions +=  " order by " + pager.getSidx() + " " + pager.getSord();
+					conditions +=  " order by " + pager.getSidx() + 
+							" " + pager.getOrder();
 				} else {
-					conditions =  "order by " + pager.getSidx() + " " + pager.getSord();
+					conditions =  "order by " + pager.getSidx() + 
+							" " + pager.getOrder();
 				}
 			}
 			
@@ -535,13 +539,13 @@ public class FuzzyQuery {
 	 * 
 	 */
 	@SuppressWarnings({ "unchecked" })
-	public Pager query(List<? extends CommonComparator> dataCache, 
+	public Pager query(List<? extends Comparator> dataCache, 
 			String pattern, Pager pager, DataDict dataDict) throws 
 			NoSuchFieldException, SecurityException, 
 			IllegalArgumentException, IllegalAccessException {
 		
-		if (null != pager.getSidx() && null != pager.getSord()) {
-			SortUtils.sort(dataCache, pager.getSord());
+		if (null != pager.getSidx() && null != pager.getOrder()) {
+			SortUtils.sort(dataCache, Order.valueOf(pager.getOrder()));
 		}
 		return PagerUtils.paging(query(dataCache, pattern, dataDict), pager);
 	}
@@ -556,7 +560,7 @@ public class FuzzyQuery {
 	 * @return：总的记录数，一页的数据，支持排序
 	 */
 	@SuppressWarnings({ "unchecked" })
-	public Pager query(List<? extends CommonComparator> dataCache, String 
+	public Pager query(List<? extends Comparator> dataCache, String 
 			pattern, Pager pager) throws NoSuchFieldException, 
 			SecurityException, IllegalArgumentException, IllegalAccessException {
 		

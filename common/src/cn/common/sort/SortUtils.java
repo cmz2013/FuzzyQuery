@@ -5,25 +5,57 @@ import java.util.List;
 
 public class SortUtils {
 	
-	public static final String SORD_DEST = "desc";
-	
-	public static final String SORD_ASC = "asc";
+	/**
+	 * POJO数据排序
+	 * @param datas
+	 * @param order
+	 * @throws NoSuchFieldException
+	 * @throws SecurityException
+	 * @throws NullPointerException
+	 */
+	public static void sort(List<? extends Comparator> datas, 
+			Order order) throws NoSuchFieldException,
+			SecurityException, NullPointerException {
+		
+		sort(datas);
+		if (!Order.asc.equals(order)) {
+			Collections.reverse(datas);
+		}
+	}
 	
 	/**
 	 * POJO数据排序
-	 * @param dataCache
-	 * @param order
+	 * @param datas
+	 * @throws NoSuchFieldException
+	 * @throws SecurityException
+	 * @throws NullPointerException
 	 */
-	public static void sort(List<? extends CommonComparator> 
-			dataCache, String order) {
+	public static void sort(List<? extends Comparator> datas) 
+			throws NoSuchFieldException, SecurityException,
+			NullPointerException {
 		
-		if (dataCache.size() == 0) {
-			return;
-		} else {
-			Collections.sort(dataCache);
-			if (!SORD_DEST.equalsIgnoreCase(order)) {
-				Collections.reverse(dataCache);
+		if (datas.size() > 0) {
+			for (Comparator data : datas) {
+				String[] fields = data.getCompareFields();
+				if (null != fields && fields.length > 0) {
+					for (String field : fields) {
+						try {
+							data.getClass().getDeclaredField(field);
+						} catch (NoSuchFieldException e) {
+							throw new NoSuchFieldException(
+									data.getClass().getName() +
+									" compareFields={" + field + "}");
+						} catch (SecurityException e) {
+							throw e;
+						} catch (NullPointerException e) {
+							throw new NullPointerException(
+									data.getClass().getName() +
+									" compareFields={" + field + "}");
+						}
+					}
+				}
 			}
+			Collections.sort(datas);
 		}
 	}
 }

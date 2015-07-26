@@ -1,0 +1,41 @@
+package cn.common.sort;
+
+import java.util.Collections;
+import java.util.List;
+
+public class SortUtils {
+	
+	/**
+	 * POJO数据排序
+	 * @param datas
+	 * @param order
+	 * @throws NoSuchFieldException
+	 * @throws SecurityException
+	 * @throws NullPointerException
+	 */
+	public static void sort(List<? extends Comparator> datas, 
+			Order order) throws NoSuchFieldException,
+			SecurityException, NullPointerException {
+		
+		sort(datas);
+		if (!Order.desc.equals(order)) {
+			Collections.reverse(datas);
+		}
+	}
+	
+	/**
+	 * POJO数据排序
+	 * @param datas
+	 * @throws NoSuchFieldException
+	 * @throws SecurityException
+	 * @throws NullPointerException
+	 */
+	public static void sort(List<? extends Comparator> datas) 
+			throws NoSuchFieldException, SecurityException,
+			NullPointerException {
+		
+		if (datas.size() > 0) {
+			Collections.sort(datas);
+		}
+	}
+}

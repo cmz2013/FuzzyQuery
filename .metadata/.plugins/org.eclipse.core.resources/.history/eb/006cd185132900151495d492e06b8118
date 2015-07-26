@@ -1,0 +1,32 @@
+package cn.common.sort.test;
+
+import cn.common.sort.CommonComparator;
+
+public class Student extends CommonComparator {
+	
+	public Student(String compareField) {
+		super(compareField);
+		// TODO Auto-generated constructor stub
+	}
+
+	private String name;
+	
+	private int age;
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}

@@ -2,7 +2,8 @@ package cn.common.page;
 
 import java.util.List;
 
-import cn.common.sort.CommonComparator;
+import cn.common.sort.Comparator;
+import cn.common.sort.Order;
 import cn.common.sort.SortUtils;
 
 public class PagerUtils {
@@ -13,18 +14,20 @@ public class PagerUtils {
 	 * 
 	 * @param pager
 	 * @return
+	 * @throws NoSuchFieldException 
 	 */
 	public static Pager paging(
-			List<? extends CommonComparator> dataCache, Pager pager) {
+			List<? extends Comparator> dataCache, Pager pager) 
+					throws NoSuchFieldException {
 		
-		List<? extends CommonComparator> subList = null;
+		List<? extends Comparator> subList = null;
 		if(dataCache == null || dataCache.size() == 0 ) {
 			pager.setRecords(0);
 			return pager;
 		}
 		
-		if (null != pager.getSidx() && null != pager.getSord()) {
-			SortUtils.sort(dataCache, pager.getSord());
+		if (null != pager.getSidx() && null != pager.getOrder()) {
+			SortUtils.sort(dataCache, Order.valueOf(pager.getOrder()));
 		}
 		
 		if(pager.getPageSize() > dataCache.size())	 {

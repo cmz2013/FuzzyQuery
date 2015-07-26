@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="1024" x="259" y="14">
+<window height="728" maximized="true" width="1024" x="18" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -13,6 +13,8 @@
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="55" y="22"/>
 <coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.python.pydev.debug.actionSet" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com_sysdeo_eclipse_tomcat_actionSet" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="135" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="78" y="22"/>
@@ -26,6 +28,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -37,18 +40,68 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" partName="DataDict.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/DataDict.java" title="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" partName="DataDict.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/DataDict.java" title="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/fuzzy/DataDict.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="80" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="187" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyQuery.java" partName="FuzzyQuery.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/fuzzy/FuzzyQuery.java" title="FuzzyQuery.java" tooltip="common/src/cn/common/fuzzy/FuzzyQuery.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5639" selectionTopPixel="4160"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Student.java" partName="Student.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/sort/test/Student.java" title="Student.java" tooltip="common/src/cn/common/sort/test/Student.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/sort/test/Student.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="564" selectionTopPixel="510"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" partName="TestClass.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/sort/test/TestClass.java" title="TestClass.java" tooltip="common/src/cn/common/sort/test/TestClass.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/sort/test/TestClass.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="726" selectionTopPixel="510"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortUtils.java" partName="SortUtils.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/sort/SortUtils.java" title="SortUtils.java" tooltip="common/src/cn/common/sort/SortUtils.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/sort/SortUtils.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="874" selectionTopPixel="572"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comparator.java" partName="Comparator.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/sort/Comparator.java" title="Comparator.java" tooltip="common/src/cn/common/sort/Comparator.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/sort/Comparator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1856" selectionTopPixel="1748"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PagerUtils.java" partName="PagerUtils.java" path="D:/Work/opensource/FuzzyQuery/common/src/cn/common/page/PagerUtils.java" title="PagerUtils.java" tooltip="common/src/cn/common/page/PagerUtils.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/common/src/cn/common/page/PagerUtils.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1191" selectionTopPixel="561"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
+<view id="oracle.eclipse.tools.weblogic.scripting.ui.views.WLSTHelpView" partName="WLST Help">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
@@ -62,6 +115,7 @@
 </view>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems"/>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="1" linkWithEditor="1" rootMode="1" workingSetName="">
@@ -114,15 +168,9 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
-<view id="oracle.eclipse.tools.weblogic.scripting.ui.views.WLSTHelpView" partName="WLST Help">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -373,7 +421,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@42074eb" ratio="0.7722132" ratioLeft="478" ratioRight="141" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@42074eb" ratio="0.67689824" ratioLeft="419" ratioRight="200" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -384,169 +432,294 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com_sysdeo_eclipse_tomcat_actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.python.pydev.navigate.actionSet"/>
+<alwaysOnActionSet id="com.python.pydev.debug.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.python.pydev.exceptionBreakpoints"/>
+<alwaysOnActionSet id="org.python.pydev.pyPropertyTrace"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.DeviceView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.SignalsView"/>
+<show_view_action id="org.eclipse.debug.ui.RegisterView"/>
+<show_view_action id="org.eclipse.debug.ui.ModuleView"/>
+<show_view_action id="org.eclipse.debug.ui.MemoryView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.executablesView"/>
+<show_view_action id="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view"/>
+<show_view_action id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<show_view_action id="org.eclipse.datatools.sqltools.result.resultView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<perspective_action id="org.eclipse.datatools.sqltools.sqleditor.perspectives.EditorPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7491961" ratioLeft="466" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@3c4babb8" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">&#x0A;<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2521739" ratioLeft="116" ratioRight="344" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/dao/NutzDao2.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/DataDict.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/fuzzy/DataDict.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/Comparator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/Student.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/TestClass.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/SortUtils.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/Comparator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/Student.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/common/src/cn/common/sort/test/TestClass.java"/>
 </editors>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="14440" y="5"/>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="283" y="0"/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15306" y="5"/>
+<item historyLabel="Student.java" index="1">
+<position info="not_deleted" x="187" y="0"/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15006" y="0"/>
+<item historyLabel="TestClass.java" index="2">
+<position info="not_deleted" x="404" y="0"/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="0">
-<position info="not_deleted" x="15945" y="0"/>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="1019" y="0"/>
 </item>
-<item historyLabel="Dao.java" index="1">
-<position info="not_deleted" x="165" y="0"/>
+<item historyLabel="TestClass.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="2">
-<position info="not_deleted" x="15945" y="0"/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
-<position/>
-</item>
-<item historyLabel="Dao.java" index="4">
-<position/>
-</item>
-<item historyLabel="Dao.java" index="4">
-<position/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
-<position/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
-<position/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
-<position/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
-<position/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
-<position/>
-</item>
-<item historyLabel="NutzDao2.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="NutzDao2.java" index="5">
+<item historyLabel="SortUtils.java" index="3">
 <position info="not_deleted" x="876" y="0"/>
 </item>
-<item historyLabel="NutzDao2.java" index="5">
-<position info="not_deleted" x="71" y="8"/>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="838" y="0"/>
 </item>
-<item historyLabel="NutzDao2.java" index="5">
-<position info="not_deleted" x="104" y="0"/>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="924" y="0"/>
 </item>
-<item historyLabel="NutzDao2.java" index="5">
-<position info="not_deleted" x="71" y="8"/>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="889" y="6"/>
 </item>
-<item historyLabel="NutzDao2.java" index="5">
-<position info="not_deleted" x="64" y="0"/>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="840" y="0"/>
 </item>
-<item historyLabel="NutzDao2.java" index="5">
-<position info="not_deleted" x="64" y="0"/>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="876" y="0"/>
 </item>
-<item historyLabel="NutzDao.java" index="3">
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="924" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="970" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="840" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="876" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="924" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="840" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="876" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="924" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="840" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="876" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="924" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="840" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="1486" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="940" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="848" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="859" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="1448" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="859" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="0">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="1486" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="1509" y="0"/>
+</item>
+<item historyLabel="SortUtils.java" index="3">
+<position info="not_deleted" x="721" y="5"/>
+</item>
+<item historyLabel="Comparator.java" index="4">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="4">
+<position info="not_deleted" x="1322" y="0"/>
+</item>
+<item historyLabel="Comparator.java" index="4">
+<position info="not_deleted" x="1558" y="7"/>
+</item>
+<item historyLabel="Comparator.java" index="4">
 <position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="11549" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="4864" y="28"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="5066" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="4874" y="5"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="5156" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="4083" y="0"/>
-</item>
-<item historyLabel="Dao.java" index="4">
+<item historyLabel="Comparator.java" index="4">
 <position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="4083" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="3981" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="1872" y="0"/>
-</item>
-<item historyLabel="NutzDao.java" index="3">
+<item historyLabel="Comparator.java" index="4">
 <position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="1872" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="6219" y="0"/>
-</item>
-<item historyLabel="FuzzyQuery.java" index="6">
+<item historyLabel="Comparator.java" index="4">
 <position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="6874" y="0"/>
+<item historyLabel="Comparator.java" index="4">
+<position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="6974" y="0"/>
+<item historyLabel="Comparator.java" index="4">
+<position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="7017" y="0"/>
+<item historyLabel="Comparator.java" index="4">
+<position/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="6875" y="0"/>
+<item historyLabel="Student.java" index="5">
+<position info="not_deleted" x="304" y="0"/>
 </item>
-<item historyLabel="FuzzyQuery.java" index="6">
-<position info="not_deleted" x="6874" y="0"/>
+<item historyLabel="TestClass.java" index="6">
+<position info="not_deleted" x="726" y="0"/>
 </item>
-<item historyLabel="DataDict.java" index="7">
-<position info="not_deleted" x="263" y="0"/>
+<item historyLabel="Student.java" index="5">
+<position info="not_deleted" x="220" y="0"/>
 </item>
-<item historyLabel="NutzDao.java" index="3">
-<position info="not_deleted" x="217" y="0"/>
+<item historyLabel="Student.java" index="5">
+<position info="not_deleted" x="690" y="0"/>
 </item>
-<item historyLabel="Dao.java" index="4">
-<position info="not_deleted" x="613" y="0"/>
+<item historyLabel="Student.java" index="5">
+<position info="not_deleted" x="595" y="16"/>
 </item>
-<item historyLabel="NutzDao.java" index="3">
-<position info="not_deleted" x="607" y="0"/>
-</item>
-<item historyLabel="Dao.java" index="4">
-<position info="not_deleted" x="653" y="0"/>
-</item>
-<item historyLabel="DataDict.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DataDict.java" index="8">
-<position info="not_deleted" x="263" y="0"/>
-</item>
-<item historyLabel="DataDict.java" index="8">
-<position info="not_deleted" x="229" y="6"/>
-</item>
-<item active="true" historyLabel="DataDict.java" index="8">
-<position info="not_deleted" x="237" y="6"/>
+<item active="true" historyLabel="Student.java" index="5">
+<position info="not_deleted" x="655" y="4"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -554,6 +727,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -562,42 +741,40 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@42074eb"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataDict.java" tooltip="common/src/cn/common/fuzzy/DataDict.java">
-<persistable path="/common/src/cn/common/fuzzy/DataDict.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Object.class" tooltip="java.lang.Object">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=common/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;java.lang(Object.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dao.java" tooltip="common/src/cn/common/fuzzy/dao/Dao.java">
-<persistable path="/common/src/cn/common/fuzzy/dao/Dao.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Collator.class" tooltip="java.text.Collator">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=common/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;java.text(Collator.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java">
-<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao2.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao2.java">
-<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyQuery.java" tooltip="common/src/cn/common/fuzzy/FuzzyQuery.java">
-<persistable path="/common/src/cn/common/fuzzy/FuzzyQuery.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Data.java" tooltip="common/src/cn/common/fuzzy/anno/Data.java">
-<persistable path="/common/src/cn/common/fuzzy/anno/Data.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Map.java" tooltip="common/src/cn/common/fuzzy/anno/Map.java">
-<persistable path="/common/src/cn/common/fuzzy/anno/Map.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzyField.java" tooltip="common/src/cn/common/fuzzy/anno/FuzzyField.java">
-<persistable path="/common/src/cn/common/fuzzy/anno/FuzzyField.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="SecurityException.class" tooltip="java.lang.SecurityException">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=common/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;java.lang(SecurityException.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PagerUtils.java" tooltip="common/src/cn/common/page/PagerUtils.java">
 <persistable path="/common/src/cn/common/page/PagerUtils.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortUtils.java" tooltip="common/src/cn/common/sort/SortUtils.java">
-<persistable path="/common/src/cn/common/sort/SortUtils.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pager.java" tooltip="common/src/cn/common/page/Pager.java">
+<persistable path="/common/src/cn/common/page/Pager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comparator.java" tooltip="common/src/cn/common/sort/Comparator.java">
+<persistable path="/common/src/cn/common/sort/Comparator.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonComparator.java" tooltip="common/src/cn/common/sort/CommonComparator.java">
 <persistable path="/common/src/cn/common/sort/CommonComparator.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortException.java" tooltip="common/src/cn/common/sort/SortException.java">
+<persistable path="/common/src/cn/common/sort/SortException.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Order.java" tooltip="common/src/cn/common/sort/Order.java">
+<persistable path="/common/src/cn/common/sort/Order.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SortUtils.java" tooltip="common/src/cn/common/sort/SortUtils.java">
+<persistable path="/common/src/cn/common/sort/SortUtils.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" tooltip="common/src/cn/common/sort/test/TestClass.java">
 <persistable path="/common/src/cn/common/sort/test/TestClass.java"/>
@@ -605,11 +782,14 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Student.java" tooltip="common/src/cn/common/sort/test/Student.java">
 <persistable path="/common/src/cn/common/sort/test/Student.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Studeng.java" tooltip="common/src/cn/common/sort/Studeng.java">
-<persistable path="/common/src/cn/common/sort/Studeng.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="NutDao.class" tooltip="org.nutz.dao.impl.NutDao">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=common/lib\/nutz-1.b.47.jar&lt;org.nutz.dao.impl(NutDao.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pager.java" tooltip="common/src/cn/common/page/Pager.java">
-<persistable path="/common/src/cn/common/page/Pager.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutzDao.java" tooltip="common/src/cn/common/fuzzy/dao/NutzDao.java">
+<persistable path="/common/src/cn/common/fuzzy/dao/NutzDao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="nutz-1.b.47.jar" tooltip="common/lib/nutz-1.b.47.jar">
+<persistable path="/common/lib/nutz-1.b.47.jar"/>
 </file>
 </mruList>
 </workbench>

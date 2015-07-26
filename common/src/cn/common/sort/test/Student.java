@@ -1,19 +1,20 @@
 package cn.common.sort.test;
 
-import cn.common.sort.CommonComparator;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class Student extends CommonComparator {
-	
-	private static String compareField = "age";
+import cn.common.sort.Comparator;
+
+public class Student extends Comparator {
 	
 	private String name;
 	
 	private int age;
 	
 	public Student() {
-		super(compareField);
+		this.compareFields = new String[]{"age", "name"};
 	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -28,6 +29,12 @@ public class Student extends CommonComparator {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+	
+	public static void main(String[] args) {
+		SimpleDateFormat sdf = new SimpleDateFormat("M");
+		System.out.println(sdf.format(new Date(System.currentTimeMillis())));
+
 	}
 	
 }
